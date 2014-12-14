@@ -36,7 +36,7 @@
       <file leaf-file-name="app.yaml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="63" selection-end="63" vertical-scroll-proportion="0.10382514">
+            <state line="3" column="14" selection-start="80" selection-end="80" vertical-scroll-proportion="0.10382514">
               <folding />
             </state>
           </provider>
@@ -201,7 +201,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-41" y="153" width="1900" height="749" extended-state="0" />
+    <frame x="-41" y="153" width="1900" height="749" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -293,7 +293,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="63" selection-end="63" vertical-scroll-proportion="0.10382514">
+        <state line="3" column="14" selection-start="80" selection-end="80" vertical-scroll-proportion="0.10382514">
           <folding />
         </state>
       </provider>
