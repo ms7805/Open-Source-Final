@@ -1,12 +1,15 @@
 application: zxweve
-version: 1
+version: 4
 runtime: python27
-api_version: 4
+api_version: 1
 threadsafe: true
 
 handlers:
 - url: .*
   script: myproject.wsgi.application
+
+- url: /stylesheets
+  static_dir: stylesheets
 
 libraries:
 - name: django
