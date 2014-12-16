@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 
 
 MIDDLEWARE_CLASSES = (
-    'google.appengine.ext.ndb.django_middleware.NdbDjangoMiddleware'
+   # 'google.appengine.ext.ndb.django_middleware.NdbDjangoMiddleware'
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -52,6 +52,8 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'mysite.urls'
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
@@ -70,7 +72,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 
 USE_I18N = True
 
