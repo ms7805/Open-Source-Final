@@ -1,4 +1,5 @@
 from django.conf.urls import patterns, url, include
+from polls.feeds import RssSiteNewsFeed
 
 from polls import views
 
@@ -10,6 +11,7 @@ urlpatterns = patterns('',
     url(r'^(?P<question_id>\d+)/vote2/$', views.vote2, name='vote2'),
     url(r'^(?P<question_id>\d+)/edit_q/$', views.edit_q, name='edit_q'),
     url(r'^(?P<question_id>\d+)/edit_a/$', views.edit_a, name='edit_a'),
+    url(r'^rss/$', RssSiteNewsFeed()),
     url(r'^register/$', views.register, name='register'),
     url(r'^login/$', views.user_login, name='login'),
     url(r'^logout/$', views.user_logout, name='logout'),

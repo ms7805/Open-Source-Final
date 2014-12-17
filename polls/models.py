@@ -18,6 +18,7 @@ class photo(models.Model):
         return self.text
 
 class Question(models.Model):
+    link = "/polls/"
     question_title = models.CharField(max_length=100, default="No Topic")
     question_text = models.CharField(max_length=500)
     pub_date = models.DateTimeField('date published',default=timezone.now(),blank=True)
