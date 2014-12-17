@@ -5,9 +5,9 @@ from django.core.urlresolvers import reverse
 from django.views import generic
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
-from polls.forms import UserForm, UserProfileForm
+from django.utils import timezone
+from polls.forms import UserForm, UserProfileForm, QuestionForm, ChoiceForm
 from polls.models import Choice, Question
-
 
 
 class IndexView(generic.ListView):
@@ -16,17 +16,56 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """Return the last five published questions."""
-        return Question.objects.order_by('-pub_date')[:5]
+        return Question.objects.order_by('-modified_date')[:10]
 
+class OldView(generic.ListView):
+    template_name = 'polls/index.html'
+    context_object_name = 'latest_question_list'
 
-class DetailView(generic.DetailView):
-    model = Question
-    template_name = 'polls/detail.html'
+    def get_queryset(self):
+        """Return the last five published questions."""
+        return Question.objects.order_by('-modified_date')[11:]
 
 
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
+
+class EditView(generic.DetailView):
+    model = Question
+    template_name = 'polls/edit.html'
+
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'polls/detail.html', {'question': question})
+
+@login_required()
+def add_question(request):
+    if request.method == 'POST':
+        form = QuestionForm(data=request.POST, user=request.user)
+        if form.is_valid():
+            form.save(commit=True)
+            return HttpResponseRedirect('/polls/')
+            #return IndexView(request)
+        else:
+            print form.errors
+    else:
+        form = QuestionForm(user=request.user);
+    return render(request, 'polls/add_question.html',{'form': form})
+
+@login_required()
+def add_choice(request):
+     if request.method == 'POST':
+        form = ChoiceForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return HttpResponseRedirect('/polls/')
+            #return IndexView(request)
+        else:
+            print form.errors
+     else:
+        form = ChoiceForm();
+     return render(request, 'polls/add_choice.html',{'form': form})
 
 def vote(request, question_id):
     p = get_object_or_404(Question, pk=question_id)
@@ -40,11 +79,67 @@ def vote(request, question_id):
         })
     else:
         selected_choice.votes += 1
+        selected_choice.date_modified = timezone.now()
         selected_choice.save()
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
+
+def vote2(request, question_id):
+    p = get_object_or_404(Question, pk=question_id)
+    try:
+        selected_choice = p.choice_set.get(pk=request.POST['choice'])
+    except (KeyError, Choice.DoesNotExist):
+        # Redisplay the question voting form.
+        return render(request, 'polls/detail.html', {
+            'question': p,
+            'error_message': "You didn't select a choice.",
+        })
+    else:
+        selected_choice.votes -= 1
+        selected_choice.date_modified = timezone.now()
+        selected_choice.save()
+        # Always return an HttpResponseRedirect after successfully dealing
+        # with POST data. This prevents data from being posted twice if a
+        # user hits the Back button.
+        return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
+
+def edit_q(request, question_id):
+    p = get_object_or_404(Question, pk=question_id)
+    if p.user.user.username == request.user.username:
+        data = request.POST['body']
+        p.question_text = data
+        p.modified_date = timezone.now()
+        p.save();
+        return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
+    else:
+        return render(request, 'polls/detail.html', {
+            'question': p,
+            'error_message': "You are not the creator of the question.",
+        })
+        # Always return an HttpResponseRedirect after successfully dealing
+        # with POST data. This prevents data from being posted twice if a
+        # user hits the Back button.
+def edit_a(request, question_id):
+    p = get_object_or_404(Question, pk=question_id)
+    a = p.choice_set.get(pk=request.POST['choice'])
+    if p.user.user.username == request.user.username:
+        data = request.POST['body']
+        a.choice_text = data
+        a.modified_date = timezone.now()
+        a.save();
+        return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
+    else:
+        return render(request, 'polls/detail.html', {
+            'question': p,
+            'error_message': "You are not the creator of the answer.",
+        })
+        # Always return an HttpResponseRedirect after successfully dealing
+        # with POST data. This prevents data from being posted twice if a
+        # user hits the Back button.
+
+
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)

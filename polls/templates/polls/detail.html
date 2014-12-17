@@ -1,12 +1,60 @@
-<h1>{{ question.question_text }}</h1>
+{% block header %}
+<a href="/polls">{% trans "Home" %}</a> ||
+{% if user.is_authenticated %}
+    <a href="/polls/logout/">Logout</a> ||
+    <a href="/polls/add_question/">Add a new question</a> ||
+    <a href="/polls/add_choice/">Add a new answer</a><br />
+{% else %}
+    <a href="/polls/register/">Register Here</a> ||
+    <a href="/polls/login/">Login</a>
+{% endif %}<hr />
+{% endblock %}
+<h1>Title:{{ question.question_title }}</h1>
+{{ question.question_text }}</br>
+
+
 
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-
+<HR style="border:5 double #987cb9" width="100%" color=#987cb9 SIZE=5>
 <form action="{% url 'polls:vote' question.id %}" method="post">
+ Vote Up on selected answers:</br>
 {% csrf_token %}
 {% for choice in question.choice_set.all %}
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
 {% endfor %}
-<input type="submit" value="Vote" />
+<input type="submit" value="Vote Up" />
 </form>
+<HR style="border:5 double #987cb9" width="100%" color=#987cb9 SIZE=5>
+ Vote Down on selected answers:</br>
+<form action="{% url 'polls:vote2' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
+{% endfor %}
+<input type="submit" value="Vote Down" />
+</form>
+
+<HR style="border:5 double #987cb9" width="100%" color=#987cb9 SIZE=5>
+<form action="{% url 'polls:edit_a' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
+
+{% endfor %}
+<br>Edit the selected answer:</br>
+    <input type="text" name="body" size="60" value="{{ subject }}" /><br />
+    <input type="submit" value="submit change" />
+</form>
+<HR style="border:5 double #987cb9" width="100%" color=#987cb9 SIZE=5>
+
+<form action="{% url 'polls:edit_q' question.id %}" method="post">
+{% csrf_token %}
+<br>Edit the question body:</br>
+<textarea name="body" id="body"></textarea><br />
+<input type="submit" value="Edit" id="submit" />
+</form>
+
+

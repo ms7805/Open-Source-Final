@@ -1,17 +1,20 @@
+
 <html lang="en">
 <head>
-<link rel="stylesheet" href="{{ STATIC_URL }}style.css" />
-<title>{% block title %}User test{% endblock %}</title>
+    <title>{% block title %}Q&A Forum{% endblock %}</title>
 </head>
 <body>
 <div id="header">
 {% block header %}
-<a href="/polls">{% trans "Home" %}</a> |
+<a href="/polls">{% trans "Home" %}</a>
 {% if user.is_authenticated %}
-<h1>Welcome to Q&A Forum, {{ user.username }}!<a href="/polls/logout/">Logout</a><br /></h1>
+<h1>Welcome to Q&A Forum, {{ user.username }}</h1>
+    <a href="/polls/logout/">Logout</a> ||
+    <a href="/polls/add_question/">Add a new question</a> ||
+    <a href="/polls/add_choice/">Add a new answer</a><br />
 {% else %}
 <h1>Welcome to Q&A Forum, Guest</h1>
-    <a href="/polls/register/">Register Here</a>
+    <a href="/polls/register/">Register Here</a> ||
     <a href="/polls/login/">Login</a>
 {% endif %}<hr />
 {% endblock %}
