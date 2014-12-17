@@ -30,15 +30,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
+    'django.contrib.sites',
+    'registration',
+    'django.contrib.admin',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
+    'polls',
 )
 
+REGISTRATION_OPEN = True
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
+REGISTRATION_AUTO_LOGIN = True
+
+LOGIN_URL = '/polls/login/'
 
 MIDDLEWARE_CLASSES = (
    # 'google.appengine.ext.ndb.django_middleware.NdbDjangoMiddleware'

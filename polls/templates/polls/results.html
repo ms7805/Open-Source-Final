@@ -1,3 +1,8 @@
+{% if user.is_authenticated %}
+<h1>Welcome to Q&A Forum, {{ user.username }}!</h1>
+{% else %}
+<h1>Welcome to Q&A Forum, Guest<a href="/polls/register/">Register Here or</a> <a href="/rango/login/">Login</a></h1>
+{% endif %}
 <h1>{{ question.question_text }}</h1>
 
 <ul>

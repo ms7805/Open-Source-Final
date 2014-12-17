@@ -1,7 +1,7 @@
 import datetime
 from django.db import models
 from django.utils import timezone
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 
@@ -18,6 +18,12 @@ class Question(models.Model):
     was_published_recently.boolean = True
     was_published_recently.short_description = 'Published recently?'
 
+class UserProfile(models.Model):
+    user = models.OneToOneField(User)
+    website = models.URLField(blank=True, default='')
+    picture = models.ImageField(upload_to='profile_pic', blank = True)
+    def __unicode__(self):
+        return self.user.username
 
 class Choice(models.Model):
     question = models.ForeignKey(Question)
