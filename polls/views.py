@@ -6,7 +6,7 @@ from django.views import generic
 from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
-from polls.forms import UserForm, UserProfileForm, QuestionForm, ChoiceForm
+from polls.forms import UserForm, UserProfileForm, QuestionForm, ChoiceForm, PictureForm
 from polls.models import Choice, Question
 
 
@@ -27,6 +27,8 @@ class OldView(generic.ListView):
         return Question.objects.order_by('-modified_date')[11:]
 
 
+
+
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'polls/results.html'
@@ -34,6 +36,13 @@ class ResultsView(generic.DetailView):
 class EditView(generic.DetailView):
     model = Question
     template_name = 'polls/edit.html'
+
+def tagView(request):
+    tags = request.POST['tag']
+    question_with_tag = Question.objects.filter(tag=tags)
+    context = {'question_with_tag':question_with_tag}
+    return render(request, 'polls/index.html',context)
+
 
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
@@ -53,6 +62,18 @@ def add_question(request):
         form = QuestionForm(user=request.user);
     return render(request, 'polls/add_question.html',{'form': form})
 
+def photo_upload(request):
+     if request.method == 'POST':
+        form = PictureForm(request.POST)
+        if form.is_valid():
+            form.save(commit=True)
+            return HttpResponseRedirect('/polls/')
+        else:
+            print form.errors
+     else:
+        form = PictureForm()
+     return render(request, 'polls/add_photo.html',{'form': form})
+
 @login_required()
 def add_choice(request):
      if request.method == 'POST':
@@ -64,7 +85,7 @@ def add_choice(request):
         else:
             print form.errors
      else:
-        form = ChoiceForm();
+        form = ChoiceForm()
      return render(request, 'polls/add_choice.html',{'form': form})
 
 def vote(request, question_id):

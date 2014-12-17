@@ -7,9 +7,15 @@ from django.contrib.auth.models import User
 class UserProfile(models.Model):
     user = models.OneToOneField(User)
     website = models.URLField(blank=True, default=None)
-    picture = models.ImageField(upload_to='profile_pic', blank = True)
+    picture = models.ImageField(upload_to='profile_images', blank=True)
     def __unicode__(self):
         return self.user.username
+
+class photo(models.Model):
+     text = models.CharField(max_length=50, default="Picture")
+     image= models.ImageField(upload_to='photos/%Y/%m/%d', blank=True,null=True)
+     def __unicode__(self):
+        return self.text
 
 class Question(models.Model):
     question_title = models.CharField(max_length=100, default="No Topic")
@@ -18,6 +24,8 @@ class Question(models.Model):
     modified_date = models.DateTimeField('date modified',default=timezone.now(),blank=True)
     user = models.ForeignKey(UserProfile,null=True)
     votes = models.IntegerField(default=0)
+    tag = models.CharField(max_length=20, null=True, blank= True)
+    pic = models.ForeignKey(photo,null=True)
     def __unicode__(self):
         return self.question_text
 
@@ -36,5 +44,6 @@ class Choice(models.Model):
     votes = models.IntegerField(default=0)
     ans_date = models.DateTimeField('date published',default=timezone.now(),blank=True)
     modified_date = models.DateTimeField('date modified',default=timezone.now(),blank=True)
+    pic = models.ForeignKey(photo,null=True)
     def __unicode__(self):
         return self.choice_text

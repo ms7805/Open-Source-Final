@@ -5,27 +5,28 @@
     <ignored path="zxweve.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418809938433" ignored="false" />
-    <file path="/app.yaml" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418541560933" ignored="false" />
+    <file path="/app.yaml" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418819581901" ignored="false" />
     <file path="/settings.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418791131620" ignored="false" />
-    <file path="/models.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418818469670" ignored="false" />
+    <file path="/models.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418830819582" ignored="false" />
     <file path="/admin.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418738915492" ignored="false" />
     <file path="/base_site.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418715428836" ignored="false" />
-    <file path="/views.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418818839814" ignored="false" />
-    <file path="/detail.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418819087292" ignored="false" />
+    <file path="/views.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418830590530" ignored="false" />
+    <file path="/detail.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418831531308" ignored="false" />
     <file path="/manage.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418732730418" ignored="false" />
-    <file path="/urls.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418815653580" ignored="false" />
+    <file path="/urls.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418830737319" ignored="false" />
     <file path="/__init__.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418736286862" ignored="false" />
     <file path="/base.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418800033779" ignored="false" />
-    <file path="/forms.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418809082663" ignored="false" />
+    <file path="/forms.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418830857358" ignored="false" />
     <file path="/register.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418740481189" ignored="false" />
-    <file path="/index.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418818708463" ignored="false" />
+    <file path="/index.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418828942678" ignored="false" />
     <file path="/login.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418792337279" ignored="false" />
     <file path="/style.css" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418793706648" ignored="false" />
     <file path="/0013_auto_20141217_0134.py" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418798192760" ignored="false" />
     <file path="/add_category.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418799808444" ignored="false" />
-    <file path="/add_question.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418801439834" ignored="false" />
+    <file path="/add_question.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418829105722" ignored="false" />
     <file path="/add_choice.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418803679144" ignored="false" />
     <file path="/edit.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418813623557" ignored="false" />
+    <file path="/photo_upload.html" changelist="c2551f89-cb34-44e1-8b07-900e8a8ac1d9" time="1418830131670" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/polls/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="54" selection-start="3568" selection-end="3568" vertical-scroll-proportion="0.0">
+            <state line="38" column="0" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.32810047">
               <folding>
                 <element signature="e#1#55#0" expanded="true" />
               </folding>
@@ -56,19 +57,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
+      <file leaf-file-name="response.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Python27/Lib/site-packages/django/http/response.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="199" selection-start="357" selection-end="357" vertical-scroll-proportion="-5.428571">
+            <state line="406" column="6" selection-start="14486" selection-end="14540" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add_photo.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_photo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="34" selection-start="197" selection-end="197" vertical-scroll-proportion="-6.107143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="31" selection-start="485" selection-end="485" vertical-scroll-proportion="-7.464286">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="forms.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/forms.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="34" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/templates/polls/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="16" selection-start="2482" selection-end="2482" vertical-scroll-proportion="0.7009494">
+            <state line="14" column="28" selection-start="535" selection-end="535" vertical-scroll-proportion="-9.5">
               <folding>
                 <element signature="n#style#0;n#HR#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#HR#1;n#!!top" expanded="true" />
@@ -79,37 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/templates/polls/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="-2.7142856">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="118" selection-end="593" vertical-scroll-proportion="-3.892857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="results.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/templates/polls/results.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="267" selection-end="267" vertical-scroll-proportion="-4.75">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="43" selection-start="1334" selection-end="1461" vertical-scroll-proportion="0.0">
+            <state line="46" column="44" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -117,21 +120,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/admin.py">
+      <file leaf-file-name="add_question.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state line="15" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="-10.178572">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/polls/__init__.py">
+      <file leaf-file-name="add_choice.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_choice.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -140,8 +141,10 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/polls/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="65" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="17" column="43" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#51#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -164,28 +167,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/login.html" />
         <option value="$PROJECT_DIR$/polls/static/polls/style.css" />
         <option value="$PROJECT_DIR$/polls/migrations/0013_auto_20141217_0134.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/add_category.html" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/add_question.html" />
         <option value="$PROJECT_DIR$/polls/templates/polls/add_choice.html" />
-        <option value="$PROJECT_DIR$/polls/forms.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/edit.html" />
         <option value="$PROJECT_DIR$/polls/templates/base.html" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/app.yaml" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/add_question.html" />
+        <option value="$PROJECT_DIR$/polls/templates/polls/photo_upload.html" />
+        <option value="$PROJECT_DIR$/polls/views.py" />
         <option value="$PROJECT_DIR$/polls/urls.py" />
         <option value="$PROJECT_DIR$/polls/models.py" />
-        <option value="$PROJECT_DIR$/polls/templates/polls/index.html" />
-        <option value="$PROJECT_DIR$/polls/views.py" />
+        <option value="$PROJECT_DIR$/polls/forms.py" />
         <option value="$PROJECT_DIR$/polls/templates/polls/detail.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+    <option name="x" value="700" />
+    <option name="y" value="19" />
     <option name="width" value="1938" />
     <option name="height" value="1050" />
   </component>
@@ -243,6 +246,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="polls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -284,6 +301,52 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="polls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mysite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appengine-try-python-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="zxweve" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="appengine-try-python-django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="myproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -454,14 +517,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
-    <editor active="true" />
+    <frame x="700" y="19" width="1938" height="1050" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.7835991" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.7835991" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2164009" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -539,113 +602,106 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/register.html">
+    <entry file="file://$PROJECT_DIR$/appengine-try-python-django/myproject/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/webCGI/qa.py">
+    <entry file="file://$PROJECT_DIR$/appengine-try-python-django/myproject/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="10" selection-start="3722" selection-end="3794" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="66" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_choice.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="24" selection-start="115" selection-end="115" vertical-scroll-proportion="-4.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="11" selection-start="617" selection-end="617" vertical-scroll-proportion="-16.285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="549" selection-end="549" vertical-scroll-proportion="-10.178572">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/results.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="267" selection-end="267" vertical-scroll-proportion="-4.75">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/admin.py">
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/__init__.py">
+    <entry file="file://C:/Python27/Lib/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="4" selection-start="1983" selection-end="2040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_choice.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_question.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="337" selection-end="337" vertical-scroll-proportion="-10.178572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="406" column="6" selection-start="14486" selection-end="14540" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="65" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
+        <state line="17" column="43" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/templates/polls/add_photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="34" selection-start="197" selection-end="197" vertical-scroll-proportion="-6.107143">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/polls/edit.html">
+    <entry file="file://$PROJECT_DIR$/polls/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="105" selection-end="105" vertical-scroll-proportion="-2.7142856">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="118" selection-end="593" vertical-scroll-proportion="-3.892857">
-          <folding />
+        <state line="33" column="34" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="199" selection-start="357" selection-end="357" vertical-scroll-proportion="-5.428571">
+        <state line="11" column="31" selection-start="485" selection-end="485" vertical-scroll-proportion="-7.464286">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/polls/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="54" selection-start="3568" selection-end="3568" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#1#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="43" selection-start="1334" selection-end="1461" vertical-scroll-proportion="0.0">
+        <state line="46" column="44" selection-start="2077" selection-end="2077" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
@@ -654,12 +710,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/polls/templates/polls/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="16" selection-start="2482" selection-end="2482" vertical-scroll-proportion="0.7009494">
+        <state line="14" column="28" selection-start="535" selection-end="535" vertical-scroll-proportion="-9.5">
           <folding>
             <element signature="n#style#0;n#HR#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#HR#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#HR#2;n#!!top" expanded="true" />
             <element signature="n#style#0;n#HR#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/polls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1220" selection-end="1220" vertical-scroll-proportion="0.32810047">
+          <folding>
+            <element signature="e#1#55#0" expanded="true" />
           </folding>
         </state>
       </provider>

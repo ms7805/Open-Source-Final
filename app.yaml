@@ -6,11 +6,11 @@ threadsafe: true
 
 handlers:
 - url: .*
-  script: myproject.wsgi.application
+  script: mysite.wsgi.application
 
 - url: /stylesheets
   static_dir: stylesheets
 
 libraries:
 - name: django
-  version: 1.5
+  version: 1.7

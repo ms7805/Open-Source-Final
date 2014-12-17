@@ -15,6 +15,8 @@ urlpatterns = patterns('',
     url(r'^logout/$', views.user_logout, name='logout'),
     url(r'^add_question/$', views.add_question, name='add_question'), # NEW MAPPING!
     url(r'^add_choice/$', views.add_choice, name='add_choice'),
+    url(r'^add_photo/$', views.photo_upload, name='add_photo'),
     url(r'^edit/$', views.EditView.as_view(), name='edit'),
     url(r'^older/$', views.OldView.as_view(), name='older'),
+    url(r'^tag/$', views.tagView, name='tag'),
 )

@@ -9,6 +9,11 @@
         <li><a href="{% url 'polls:detail' question.id %}">Title: {{ question.question_title }} || User:{{ question.user}} || Date Created: {{question.pub_date}} || Last Activity: {{question.modified_date}}</a></li>        {% endfor %}
     </ul>
     <a href=/polls/older>View older questions</a>
+<form action="{% url 'polls:tag'%}" method="post">
+{% csrf_token %}
+   Search for question with tag: <input type="text" name="tag" size="60" value="{{ subject }}" /><br />
+    <input type="submit" value="Look for tag" />
+</form>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
