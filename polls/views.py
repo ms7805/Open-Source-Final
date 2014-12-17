@@ -144,18 +144,26 @@ def edit_q(request, question_id):
         # user hits the Back button.
 def edit_a(request, question_id):
     p = get_object_or_404(Question, pk=question_id)
-    a = p.choice_set.get(pk=request.POST['choice'])
-    if p.user.user.username == request.user.username:
-        data = request.POST['body']
-        a.choice_text = data
-        a.modified_date = timezone.now()
-        a.save();
-        return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
-    else:
+    try:
+        a = p.choice_set.get(pk=request.POST['choice'])
+    except (KeyError, Choice.DoesNotExist):
+        # Redisplay the question voting form.
         return render(request, 'polls/detail.html', {
             'question': p,
-            'error_message': "You are not the creator of the answer.",
+            'error_message': "You didn't select a choice.",
         })
+    else:
+        if p.user.user.username == request.user.username:
+            data = request.POST['body']
+            a.choice_text = data
+            a.modified_date = timezone.now()
+            a.save();
+            return HttpResponseRedirect(reverse('polls:results', args=(p.id,)))
+        else:
+            return render(request, 'polls/detail.html', {
+                'question': p,
+                'error_message': "You are not the creator of the answer.",
+            })
         # Always return an HttpResponseRedirect after successfully dealing
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.

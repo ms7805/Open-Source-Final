@@ -35,7 +35,7 @@ Tags: {{ question.tag }}</br>
 {% csrf_token %}
 {% for choice in question.choice_set.all %}
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text|urlize }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
 {% endfor %}
 <input type="submit" value="Vote Down" />
 </form>
@@ -45,7 +45,7 @@ Tags: {{ question.tag }}</br>
 {% csrf_token %}
 {% for choice in question.choice_set.all %}
     <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}" />
-    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text|urlize }}</label> Votes:{{ choice.votes }} || Last Activity:{{ choice.modified_date }} </br>
 
 {% endfor %}
 <br>Edit the selected answer:</br>
