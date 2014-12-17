@@ -1,0 +1,23 @@
+;; This buffer is for notes you don't want to save, and for Lisp evaluation.
+;; If you want to create a file, visit that file with C-x C-f,
+;; then enter the text in that file's own buffer.
+===========How to run it=========
+     Sorry I was having problem with GAE(I sent in a couple emails), I think it may have due to that I used django 1.7.1 which GAE doesnt support. I apologize for it, I will send you a link once I worked it out, but for now please evaluate it locally. In command line, change the directory to the root directory(zxweve/), then do python manage.py runserver. Then browse to localhost:8000/polls
+===========Description==========
+I developed my app(polls) using Django 1.7.1. Since I am new to Django I followed the tutorial to create this poll app. I didn't bother to change its name but kept working on it and added all the necessary features.
+Feature 1: The multiple users: I developed using django's user package(I didnt get GAE to work so I just devleoped within django)
+Feature 2: When viewing the question there are text area on the bottom which allows a user to type in the desired content to the question. If the current user matches the creator of the question, the question body will be modified. There is a similar process for editing answer
+Feature 3: In the view I limit the index page to show 10 questions that were recently modified, with an older questions link to older questions
+Feature 4: I sorted the votes from largest to smallest in view and pass the answer list into template
+Feature 5: I created a field called tag under models, which set blank=True by default
+Feature 6: I use the 'urelize' template tag to automatic urlize texts
+Feature 7: In model there is a photo class, and there is also a place to update photo. When creating a question/answer there is a drop down menu selecting the photo uploaded as a part of question. If selected, then it will be shown in the question body.
+Feature 8: Each question has its own id and a link to the question polls/$question_ID
+Feature 9: Each question and answer have a field called modified_time in the model, so each time they are changed, the field will get updated as well(in view)
+Feature 10: I looked up how to add rss on django documentation and add 
+
+============Branch on Git============
+I turned off Feature 6: Basically I just commented out the urelize template tag
+============Extra Feature=============
+-A Moderator mode is avaialble: Through polls/admin, a user can change/delete/create questions and answers using the user admin
+-User is allowed to upload a profile pic of themselves
